@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <title>Einfacher Rechner</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+      text-align: center;
+    }
+    input, select, button {
+      margin: 10px;
+      padding: 10px;
+      font-size: 16px;
+    }
+    #result {
+      margin-top: 20px;
+      font-size: 20px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h1>Einfacher Rechner</h1>
+  <input type="number" id="num1" placeholder="Zahl 1" />
+  <select id="operator">
+    <option value="+">+</option>
+    <option value="-">−</option>
+    <option value="*">×</option>
+    <option value="/">÷</option>
+  </select>
+  <input type="number" id="num2" placeholder="Zahl 2" />
+  <button onclick="rechnen()">Berechne</button>
+  <div id="result"></div>
+
+  <script>
+    function rechnen() {
+      const num1 = parseFloat(document.getElementById("num1").value);
+      const num2 = parseFloat(document.getElementById("num2").value);
+      const op = document.getElementById("operator").value;
+      let result;
+
+      if (isNaN(num1) || isNaN(num2)) {
+        result = "Bitte gib zwei gültige Zahlen ein.";
+      } else {
+        switch(op) {
+          case "+": result = num1 + num2; break;
+          case "-": result = num1 - num2; break;
+          case "*": result = num1 * num2; break;
+          case "/": 
+            result = num2 !== 0 ? num1 / num2 : "Division durch 0 nicht möglich";
+            break;
+          default:
+            result = "Ungültiger Operator";
+        }
+      }
+
+      document.getElementById("result").innerText = "Ergebnis: " + result;
+    }
+  </script>
+</body>
+</html>

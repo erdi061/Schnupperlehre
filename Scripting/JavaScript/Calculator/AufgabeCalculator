@@ -1,0 +1,57 @@
+
+## Aufgabe 1: HTML-Grundstruktur
+
+1. Erstelle eine neue Datei namens `calculator.html`.
+
+2. Schreibe die Grundstruktur eines HTML-Dokuments (mit `<html>`, `<head>`, `<body>` usw.).
+
+3. Füge im `<head>` einen Titel wie "Einfacher Taschenrechner" ein.
+
+4. Schreibe eine Hauptüberschrift (`<h1>`) im `<body>`, z. B. "Taschenrechner".
+
+---
+
+## Aufgabe 2: Eingabefelder und Steuerelemente
+
+1. Füge zwei Eingabefelder für Zahlen (`<input type="number">`) hinzu.
+
+2. Füge ein Dropdown-Menü (`<select>`) mit den vier Operatoren +, −, ×, ÷ hinzu.
+
+3. Füge einen Button hinzu, der beim Klick eine Berechnung ausführt (z. B. `onclick="calculate()"`).
+
+4. Erstelle ein leeres `<div>`-Element mit der ID `result`, in dem später das Ergebnis angezeigt werden soll.
+
+---
+
+## Aufgabe 3: Styling mit CSS
+
+1. Schreibe innerhalb des `<head>` einen `<style>`-Block.
+
+2. Sorge für zentrierten Text, ausreichende Abstände und angenehme Schriftgröße.
+
+3. Style die Eingabefelder, den Button und das Ergebnisfeld so, dass sie optisch zusammenpassen.
+
+---
+
+## Aufgabe 4: JavaScript-Funktion zur Berechnung
+
+1. Schreibe im `<script>`-Block am Ende der Datei eine Funktion `calculate()`.
+
+2. Hole die Werte der beiden Eingabefelder und des ausgewählten Operators.
+
+3. Rechne abhängig vom gewählten Operator und zeige das Ergebnis im `result`-Div an.
+
+4. Achte darauf, dass:
+
+   * bei Division durch 0 eine Warnung angezeigt wird.
+   * bei ungültiger Eingabe (z. B. leere Felder) eine entsprechende Meldung kommt.
+
+---
+
+## Aufgabe 5: Zusätzliche Funktionen (optional)
+
+1. Baue eine Funktion ein, um die Felder zu leeren.
+
+2. Baue Tastaturunterstützung ein (Drücken von Enter löst Berechnung aus).
+
+3. Füge Validierungen ein, um zu verhindern, dass Buchstaben eingegeben werden.
