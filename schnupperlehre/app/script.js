@@ -52,7 +52,7 @@ function zeigeFilmeKacheln() {
 
   <div slot="footer">
     <sl-rating></sl-rating>
-    <sl-button variant="primary">Rate this movie!</sl-button><br>
+    <sl-button onclick=rating("${film.titel}")>Rate this movie!</sl-button><br>
   </div>
   <div slot="footer">
     <sl-divider></sl-divider>
@@ -81,4 +81,8 @@ function zeigeFilmDetails(filmId) {
   <button onclick="zeigeFilmeKacheln()">Zurück zur Übersicht</button>
 </div>
     `;
+}
+
+function rating(film) {
+  alert(`Thanks for rating: ${film}!`);
 }
