@@ -7,7 +7,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Erdi's Movie Shop</title>
-    
+    <link rel="stylesheet" href="style.css" />
 </head>
 <style>
     sl-breadcrumb-item::part(base) {
@@ -55,30 +55,10 @@
     <h1>Erdi's Movie Shop  <sl-icon name="film"></sl-icon></h1><br>
 </div class=Inhalt>
 <p>Buy your desired movies!</p><br>
-<div>
-<sl-card class="card-image">
-  <img 
-    slot="image"
-    src="topgunmaverick.jpg" 
-    alt="Top Gun: Maverick"
-  />
-  <sl-card class="card-footer">
-  Ein früheriger Top Gun Absolvierender trainiert die zurzeitige Leute in Top Gun um einen fast unmöglichen Mission durchzuführen.<br>
-  <p class="Preis">10.50 Fr.</p>
-
-  <div slot="footer">
-    <sl-rating></sl-rating>
-    <sl-button variant="primary">Rate this movie!</sl-button><br>
-  </div>
-  <div slot="footer">
-    <sl-divider></sl-divider>
-    <sl-button variant="success">Buy Now</sl-button>
-    <sl-button variant="warning">Put into basket</sl-button>
-    <sl-button variant="primary"><a href="rating.html">More Info</a></sl-button> 
-    <sl-button variant="primary">Leave a written review</sl-button>
-  </div>
-</sl-card>
-</sl-card>
-</div>
+<div id="movie-shop"></div>
+<script src="./script.js"></script>
+    <script>
+      zeigeFilmeKacheln();
+    </script>
 </body>
 </html>
