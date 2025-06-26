@@ -14,7 +14,7 @@ Erstelle eine Funktion mit dem Namen `myCity`, in der du deine Logik von Aufgabe
 
 ## Aufgabe 4
 
-1. Erstelle eine neue Datei namens `TwoPlayerGame.py`.
+1. Erstelle eine neue Datei namens `TwoPlayerGame.js`.
 
 2. Erstelle nun eine Klasse namens `Player` mit einem Konstruktor, der die Attribute `name` und `health` hat. Die `health` sollte auf 100 sein. Schaue im PythonExplanation nach wenn du dir nicht mehr sicher bist wie dies genau funktionert.
 

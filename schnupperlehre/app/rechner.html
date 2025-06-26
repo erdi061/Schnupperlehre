@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Online Taschenrechner</title>
+    <script src="rechner.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.20.1/cdn/themes/light.css"
+    />
+    <script
+      type="module"
+      src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.20.1/cdn/shoelace-autoloader.js"
+    ></script>
+  </head>
+  <style>
+    div {
+      text-align: center;
+    }
+  </style>
+  <body>
+    <h1>Online Taschenrechner</h1>
+    <div id="eingabebereich"></div>
+    <div>
+      <button onclick="buttonpress(7)" type="button">7</button>
+      <button onclick="buttonpress(8)" type="button">8</button>
+      <button onclick="buttonpress(9)" type="button">9</button>
+      <sl-button onclick="buttonpress('/')" variant="warning">/ </sl-button>
+    </div>
+    <div>
+      <button onclick="buttonpress(4)" type="button">4</button>
+      <button onclick="buttonpress(5)" type="button">5</button>
+      <button onclick="buttonpress(6)" type="button">6</button>
+      <sl-button onclick="buttonpress('*')" variant="warning">*</sl-button>
+    </div>
+    <div>
+      <button onclick="buttonpress(1)" type="button">1</button>
+      <button onclick="buttonpress(2)" type="button">2</button>
+      <button onclick="buttonpress(3)" type="button">3</button>
+      <sl-button onclick="buttonpress('-')" variant="warning">- </sl-button>
+    </div>
+    <div>
+      <button onclick="buttonpress(0)" type="button">0</button>
+      <button onclick="buttonpress('.')" type="button">.</button>
+      <button onclick="gleichheitszeichen()" type="button">=</button>
+      <sl-button onclick="buttonpress('+')" variant="warning">+</sl-button>
+    </div>
+    <div>
+      <button onclick="allesweg()" type="button">Clear</button>
+      <button onclick="löschen()" type="button">Delete</button>
+    </div>
+  </body>
+</html>

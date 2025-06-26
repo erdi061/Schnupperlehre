@@ -197,40 +197,38 @@ fruits.forEach(function (fruit) {
 });
 ```
 
-## Website Dynamisch Gestalten  
-
+## Website Dynamisch Gestalten
 
 Stell dir vor, eine Webseite ist wie Lego:
-HTML‑Bausteine (HTML-Tags) sind schon da, JavaScript (JS) ist deine Hand, die neue Steine dazu­steckt oder umbaut, während die Seite offen ist. 
+HTML‑Bausteine (HTML-Tags) sind schon da, JavaScript (JS) ist deine Hand, die neue Steine dazu­steckt oder umbaut, während die Seite offen ist.
 
 ---
 
 ### 1. Wie finde ich einen Baustein?
 
-| Befehl                   | Bedeutet                                                   | Kleines Beispiel                                 |
-| ------------------------ | ---------------------------------------------------------- | ------------------------------------------------ |
-| `getElementById("wort")` | Gib mir den HTML Tag mit der ID Wort.                      | `const titel = document.getElementById("kopf");` |
-| `querySelector("regel")` | Gib mir den ersten css class name welcher regel ist.       | `const knopf = document.querySelector(".rot");`  |
-
+| Befehl                   | Bedeutet                                             | Kleines Beispiel                                 |
+| ------------------------ | ---------------------------------------------------- | ------------------------------------------------ |
+| `getElementById("wort")` | Gib mir den HTML Tag mit der ID Wort.                | `const titel = document.getElementById("kopf");` |
+| `querySelector("regel")` | Gib mir den ersten css class name welcher regel ist. | `const knopf = document.querySelector(".rot");`  |
 
 ---
 
 ### 2. Inhalt ändern
 
-| Befehl                              | Bedeutet                                        | Beispiel                            |
-| ----------------------------------- | ----------------------------------------------- | ----------------------------------- |
-| `element.textContent = "Hallo"`     | Schreibe reinen Text in diesen HTML-Tag.        | `titel.textContent = "Willkommen";` |
-| `element.innerHTML = "<b>Fett</b>"` | Ersetze den Inhalt durch HTML‑Text.             | `titel.innerHTML = "<i>Hi!</i>";`   |
+| Befehl                              | Bedeutet                                 | Beispiel                            |
+| ----------------------------------- | ---------------------------------------- | ----------------------------------- |
+| `element.textContent = "Hallo"`     | Schreibe reinen Text in diesen HTML-Tag. | `titel.textContent = "Willkommen";` |
+| `element.innerHTML = "<b>Fett</b>"` | Ersetze den Inhalt durch HTML‑Text.      | `titel.innerHTML = "<i>Hi!</i>";`   |
 
 ---
 
 ### 3. Neuen Baustein bauen & ankleben
 
-| Schritt                    | Code                                        | Was passiert                                  |
-| -------------------------- | ------------------------------------------- | --------------------------------------------- |
-| **a) Baustein herstellen** | `const neu = document.createElement("li");` | es wird ein neues `<li>` hinzugefügt.         |
-| **b) Text draufschreiben** | `neu.textContent = "Äpfel";`                | Auf dem `<li>` wird „Äpfel” gedruckt.         |
-| **c) Stein einklicken**    | `liste.appendChild(neu);`                   | Der neue Text wird dem `<li>` hinzugefügt.    |
+| Schritt                    | Code                                        | Was passiert                               |
+| -------------------------- | ------------------------------------------- | ------------------------------------------ |
+| **a) Baustein herstellen** | `const neu = document.createElement("li");` | es wird ein neues `<li>` hinzugefügt.      |
+| **b) Text draufschreiben** | `neu.textContent = "Äpfel";`                | Auf dem `<li>` wird „Äpfel” gedruckt.      |
+| **c) Stein einklicken**    | `liste.appendChild(neu);`                   | Der neue Text wird dem `<li>` hinzugefügt. |
 
 Wichtig: **Ohne Schritt c sieht man nichts!** Erst `appendChild` zeigt das Element auf der Seite.
 
@@ -243,6 +241,7 @@ knopf.addEventListener("click", () => {
   /* Code, der beim Klick laufen soll */
 });
 ```
+
 ---
 
 ## Alert
@@ -252,12 +251,12 @@ knopf.addEventListener("click", () => {
 alert("Hallo! Willkommen!");
 
 ```
+
 ---
 
 ## Mehr Tips und Tricks:
 
 https://www.w3schools.com/js
-
 
 ## Mini‑Beispiel – alles zusammen
 
